@@ -1,0 +1,4 @@
+D:\Sistemas\GPessoas\WebApi\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+D:\Sistemas\GPessoas\WebApi\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+D:\Sistemas\GPessoas\WebApi\WebApi\obj\Debug\WebApi.dll
+D:\Sistemas\GPessoas\WebApi\WebApi\obj\Debug\WebApi.pdb
