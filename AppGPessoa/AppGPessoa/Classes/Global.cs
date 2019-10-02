@@ -20,7 +20,7 @@ namespace AppGPessoa.Classes
         private const string uri = "http://localhost:50310/funcionarios";
 
         /// <summary>
-        /// 
+        /// Função responsável por buscar informações da API e retornar em uma Lista
         /// </summary>
         /// <param name="Codigo">Código de paramêtro para consumo de API</param>
         /// <returns></returns>
@@ -53,7 +53,7 @@ namespace AppGPessoa.Classes
         }
 
         /// <summary>
-        /// 
+        /// Função responsável por buscar informações da API e retornar em uma Classe
         /// </summary>
         /// <param name="Caminho">Caminho de complemento para consumo da API</param>
         /// <param name="Codigo">Código de paramêtro para consumo de API</param>
@@ -82,11 +82,10 @@ namespace AppGPessoa.Classes
         }
 
         /// <summary>
-        /// 
+        /// Função responsável por enviar, editar e remover informações da API e retornar em uma string
         /// </summary>
-        /// <param name="item"></param>
-        /// <param name="Caminho"></param>
-        /// <param name="Codigo"></param>
+        /// <param name="item">Variavel com os dados a serem adicionados, editados ou excluidos</param>
+        /// <param name="Caminho">Complemento do caminho da API</param>
         /// <returns></returns>
         public static string APIFuncionariosCDU(FuncionarioModel item, string Caminho)
         {
@@ -119,9 +118,9 @@ namespace AppGPessoa.Classes
         }
 
         /// <summary>
-        /// 
+        /// Função que busca os dados do Logradouro através do CEP informado
         /// </summary>
-        /// <param name="cep"></param>
+        /// <param name="cep">CEP a ser pesquisado</param>
         /// <returns></returns>
         public static EnderecoModel BuscaEnderecoViaCEP(string cep)
         {
@@ -135,9 +134,9 @@ namespace AppGPessoa.Classes
         }
 
         /// <summary>
-        /// 
+        /// Função para validar o CEP digitado
         /// </summary>
-        /// <param name="cep"></param>
+        /// <param name="cep">Variavel analisada</param>
         /// <returns></returns>
         public static bool ValidaCEP(string cep)
         {
@@ -148,9 +147,9 @@ namespace AppGPessoa.Classes
         }
 
         /// <summary>
-        /// 
+        /// Função para validar o CPF digitado
         /// </summary>
-        /// <param name="CPF"></param>
+        /// <param name="CPF">Variavel analisada</param>
         /// <returns></returns>
         public static bool ValidaCPF(string CPF)
         {
@@ -219,10 +218,10 @@ namespace AppGPessoa.Classes
         }
 
         /// <summary>
-        /// 
+        /// Função para converter um objeto para Json
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="obj"></param>
+        /// <typeparam name="T">Tipo do bjeto a ser convertido</typeparam>
+        /// <param name="obj">Objeto a ser convertido</param>
         /// <returns></returns>
         public static string ConverteObjectParaJSon<T>(T obj)
         {
@@ -242,10 +241,10 @@ namespace AppGPessoa.Classes
         }
 
         /// <summary>
-        /// 
+        /// Função que Convert uma string Json para um Objeto
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="jsonString"></param>
+        /// <typeparam name="T">Tipo do objeto após ser convertido</typeparam>
+        /// <param name="jsonString">String a ser convertido</param>
         /// <returns></returns>
         public static T ConverteJSonParaObject<T>(string jsonString)
         {
